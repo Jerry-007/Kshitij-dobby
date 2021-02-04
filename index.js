@@ -8,6 +8,7 @@ const cors = require('cors')
 const passport = require('passport')
 const routes = require("./routes/api/images");
 const user = require('./routes/api/user');
+var path = require('path');
 
 const app = express();
 app.use(cors());
