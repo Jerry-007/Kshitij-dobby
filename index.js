@@ -18,8 +18,8 @@ app.use(session({ secret: "thesecret",resave:false,saveUninitialized:true }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-const port = process.env.port || 8000;
-const dbUrl = process.env.dbUrl;
+const port = process.env.PORT || 8000;
+const dbUrl = process.env.DB_URL;
 
 mongoose
   .connect(dbUrl, {
